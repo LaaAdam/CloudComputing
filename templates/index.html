@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask App</title>
+</head>
+<body>
+    <h1>Événements</h1>
+    <ul>
+        {% for event in events %}
+            <li>{{ event.title }} - {{ event.date }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Actualités</h1>
+    <ul>
+        {% for item in news %}
+            <li>{{ item.headline }} - {{ item.date }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
